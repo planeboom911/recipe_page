@@ -1,0 +1,73 @@
+/*
+  Outer Styling CSS
+  Contains : Outer Styling
+    - Various Resets
+    - Root Variables ( colors, font sizes )
+    - Font families, Font sizes, Line Heights
+    - Text color
+*/
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Variables */
+:root {
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --stone-border: hsl(24, 5%, 90%);
+
+  --brown-800: hsl(14, 45%, 36%);
+
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  --text-body: 1.2rem; /* 16px base */
+  --text-title: 1.5rem; /* 24px */
+  --text-display: 2.6rem; /* 40px */
+}
+
+.display {
+  font-family: 'Young Serif', sans-serif;
+  font-weight: 400; /* Semibold */
+  font-size: var(--text-display);
+  line-height: 2.8rem;
+}
+
+.title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: var(--text-title);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400; /* normal */
+  font-size: var(--text-body);
+  color: var(--stone-600);
+  line-height: 1.6rem;
+}
+
+body article {
+  background-color: #fff;
+  max-width: 700px;
+}
+
+@media screen and ( min-width: 700px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--stone-100);
+  }
+  
+}

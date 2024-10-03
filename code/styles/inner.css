@@ -1,0 +1,135 @@
+/*
+  Inner Styling CSS
+  Contains : Component Styling
+    - Margins, Paddings, etc.
+    - Layouts ( flex, grid .. )
+    - Foreground/Background colors, ...
+*/
+
+section {
+  margin: 2rem;
+  margin-left: 2.5rem;
+  margin-bottom: 2.2rem;
+}
+
+section h2.display {
+  font-size: 2.1rem;
+  color: var(--brown-800);
+}
+
+section .display.main {
+  color: var(--stone-900);
+}
+
+.info {
+  background-color: var(--rose-50);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.info .title {
+  color: var(--rose-800);
+}
+
+.desc {
+  margin-top: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.table {
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+}
+
+.table .row {
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--stone-border);
+}
+
+.table .row:last-child {
+  border-bottom: none;
+}
+
+.table .row p {
+  width: 70%;
+  min-width: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table .row p span:last-child {
+  width: 3rem;
+  color: var(--brown-800);
+  font-weight: 600;
+}
+
+.hr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  width: 85%;
+  border: none;
+  border-bottom: 2px solid var(--stone-border);
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  height: 12vh;
+  background: url(../../assets/images/image-omelette.jpeg) center no-repeat;
+  background-size: cover;
+  height: 14rem;
+}
+
+.attribution.table {
+  max-width: 50rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.attribution.table .row {
+  display: flex;
+  justify-content: flex-start;
+  border-color: var(--stone-900);
+  column-gap: 1rem;
+}
+
+.attribution.table a,a:visited,a:link {
+  color: var(--rose-800);
+}
+
+.attribution.table a:active {
+  color: var(--brown-800);
+}
+
+@media screen and ( min-width: 700px) {
+
+  article {
+    margin: 4rem 0;
+    padding: 2.8rem;
+    border-radius: 1.75rem;
+  }
+
+  section {
+    margin-left: 0;
+  }
+
+  #recipeImg {
+    height: 19rem;
+    border-radius: 0.75rem;
+  }
+
+  hr {
+    width: 95%;
+  }
+
+}

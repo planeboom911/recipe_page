@@ -1,0 +1,81 @@
+/*
+  List Styling CSS
+  Contains : List styles, List content styles
+    - ol, li styles
+    - Marker styles
+    - Content styles inside of lists
+    - Custom counter styles
+*/
+
+ul, ol {
+  padding: 0 1.25rem;
+  margin-top: 1rem;
+}
+
+ol {
+  padding-left: 0.75rem;
+}
+
+ol li {
+  font-size: 0px;
+  display: flex;
+  align-items: baseline;
+}
+
+li {
+  margin-bottom: 0.85rem;
+}
+
+/* List content styles */
+ul li p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+ol li p {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+li p {
+  font-size: var(--text-body);
+  margin-left: 1.5rem;
+}
+
+li .t {
+  font-weight: 600;
+}
+
+/* Marker styles  */
+
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+li::marker {
+  color: var(--brown-800);
+  font-size: 1rem;
+}
+
+ol li::before, ol li i::before {
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--brown-800)
+}
+
+ol li::before {
+  content: counter(li);
+  counter-increment: li;
+}
+
+ol li i::before {
+  content: '.';
+}
+
+@media screen and ( min-width: 701px ) {
+  ul, ol {
+    padding: 0 0.75rem;
+    margin-top: 1rem;
+  }
+}
